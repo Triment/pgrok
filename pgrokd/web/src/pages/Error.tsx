@@ -6,8 +6,8 @@ export default function ErrorPage() {
 
   return (
     <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
+      <h1>天!</h1>
+      <p>出错了.</p>
       <p>
         <i>{isRouteErrorResponse(error) ? error.statusText : "Unknown error message"}</i>
       </p>

@@ -46,7 +46,7 @@ export default function DashboardPage() {
                       <div>
                         <Menu.Button className="relative flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                           <span className="absolute -inset-1.5" />
-                          <span className="sr-only">Open user menu</span>
+                          <span className="sr-only">用户菜单</span>
                           <UserCircleIcon className="h-8 w-8 rounded-full" />
                         </Menu.Button>
                       </div>
@@ -62,7 +62,7 @@ export default function DashboardPage() {
                         <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                           <Menu.Item>
                             <a href="/-/sign-out" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                              Sign out
+                              退出
                             </a>
                           </Menu.Item>
                         </Menu.Items>
@@ -78,19 +78,19 @@ export default function DashboardPage() {
         <div className="py-10">
           <header className="pb-5">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900">Dashboard</h1>
+              <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900">控制台</h1>
             </div>
           </header>
           <main>
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div>
                 <div className="px-4 sm:px-0">
-                  <h3 className="text-base font-semibold leading-7 text-gray-900">User information</h3>
+                  <h3 className="text-base font-semibold leading-7 text-gray-900">用户信息</h3>
                 </div>
                 <div className="mt-6 border-t border-gray-100">
                   <dl className="divide-y divide-gray-100">
                     <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                      <dt className="text-sm font-medium leading-6 text-gray-900">Display name</dt>
+                      <dt className="text-sm font-medium leading-6 text-gray-900">用户名</dt>
                       <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{user.displayName}</dd>
                     </div>
                     <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -100,7 +100,7 @@ export default function DashboardPage() {
                       </dd>
                     </div>
                     <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                      <dt className="text-sm font-medium leading-6 text-gray-900">Public URL</dt>
+                      <dt className="text-sm font-medium leading-6 text-gray-900">公网地址</dt>
                       <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                         <a
                           className="underline text-blue-600 hover:text-blue-800"
