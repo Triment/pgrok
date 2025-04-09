@@ -62,7 +62,7 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: |
-            ghcr.io/Triment/pgrokd:insiders
+            ghcr.io/triment/pgrokd:insiders
       - name: Scan for container vulnerabilities
         uses: aquasecurity/trivy-action@master
         with:
@@ -77,7 +77,7 @@ jobs:
           username: ${{ secrets.SMTP_USERNAME }}
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: GitHub Actions (${{ github.repository }}) job result
-          to: github-actions-8ce6454@unknwon.io
+          to: 13198898368@163.com
           from: GitHub Actions (${{ github.repository }})
           reply_to: noreply@unknwon.io
           body: |
@@ -115,11 +115,11 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ttl.sh/pgrok/pgrokd-${{ steps.short-sha.outputs.sha }}:1d
+            ttl.sh/triment/pgrokd-${{ steps.short-sha.outputs.sha }}:1d
       - name: Scan for container vulnerabilities
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: ttl.sh/pgrok/pgrokd-${{ steps.short-sha.outputs.sha }}:1d
+          image-ref: ttl.sh/triment/pgrokd-${{ steps.short-sha.outputs.sha }}:1d
           exit-code: '1'
 
   # Updates to the following section needs to be synced to all release branches within their lifecycles.
@@ -164,8 +164,8 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: |
-            ghcr.io/pgrok/pgrokd:${{ env.IMAGE_TAG }}
-            ghcr.io/pgrok/pgrokd:latest
+            ghcr.io/triment/pgrokd:${{ env.IMAGE_TAG }}
+            ghcr.io/triment/pgrokd:latest
       - name: Send email on failure
         uses: dawidd6/action-send-mail@v3
         if: ${{ failure() }}
