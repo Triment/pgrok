@@ -62,17 +62,17 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: |
-            ghcr.io/pgrok/pgrokd:insiders
+            ghcr.io/Triment/pgrokd:insiders
       - name: Scan for container vulnerabilities
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: ghcr.io/pgrok/pgrokd:insiders
+          image-ref: ghcr.io/Triment/pgrokd:insiders
           exit-code: '1'
       - name: Send email on failure
         uses: dawidd6/action-send-mail@v3
         if: ${{ failure() }}
         with:
-          server_address: smtp.mailgun.org
+          server_address: smtp.163.com
           server_port: 465
           username: ${{ secrets.SMTP_USERNAME }}
           password: ${{ secrets.SMTP_PASSWORD }}
