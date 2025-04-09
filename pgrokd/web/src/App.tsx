@@ -1,7 +1,7 @@
 import axios from "axios";
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { Route, createBrowserRouter, createRoutesFromElements, Navigate, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, Navigate, Route, RouterProvider } from "react-router-dom";
 import "./App.css";
 import { UserContextType, UserProvider } from "./hooks/useUser";
 import DashboardPage from "./pages/Dashboard";
