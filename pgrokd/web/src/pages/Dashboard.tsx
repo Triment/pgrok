@@ -119,7 +119,10 @@ export default function DashboardPage() {
                     <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                       <dt className="text-sm font-medium leading-6 text-gray-900">运行方法</dt>
                       <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                        <h6>先配置</h6>
                         <code>pgrok init --remote-addr nmmm.top:2222 --forward-addr http://localhost:port --token {user.token}</code>
+                        <br/>
+                        <h6>然后运行</h6>
                         <code>pgrok</code>
                       </dd>
                     </div>
@@ -134,7 +137,7 @@ export default function DashboardPage() {
   );
 }
 
-const navigation = [{ name: "Dashboard", href: "/", current: true }];
+const navigation = [{ name: "控制台", href: "/", current: true }];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
