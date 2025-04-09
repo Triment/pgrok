@@ -116,6 +116,13 @@ export default function DashboardPage() {
                         />
                       </dd>
                     </div>
+                    <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                      <dt className="text-sm font-medium leading-6 text-gray-900">运行方法</dt>
+                      <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                        <code>pgrok init --remote-addr nmmm.top:2222 --forward-addr http://localhost:port --token {user.token}</code>
+                        <code>pgrok</code>
+                      </dd>
+                    </div>
                   </dl>
                 </div>
               </div>
