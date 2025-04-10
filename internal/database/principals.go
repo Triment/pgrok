@@ -11,10 +11,11 @@ type Principal struct {
 	Identifier  string `gorm:"unique;not null"`
 	DisplayName string `gorm:"not null"`
 	Token       string `gorm:"unique;not null"`
-	Subdomain   string `gorm:"unique;not null"`
-	LastTCPPort int
-	CreatedAt   time.Time `gorm:"not null"`
-	UpdatedAt   time.Time `gorm:"not null"`
+	Subdomain     string `gorm:"unique;not null"`
+	LastTCPPort   int
+	RateLimitKBps int       `gorm:"not null;default:200"` // New field for rate limit in KB/s
+	CreatedAt     time.Time `gorm:"not null"`
+	UpdatedAt     time.Time `gorm:"not null"`
 }
 
 func (*Principal) TableName() string {

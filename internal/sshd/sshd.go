@@ -22,7 +22,7 @@ func Start(
 	port int,
 	proxy conf.Proxy,
 	db *database.DB,
-	newProxy func(host, forward string),
+	addProxy func(principalID int64, host, forward string), // Updated signature
 	removeProxy func(host string),
 ) error {
 	config := &ssh.ServerConfig{
@@ -125,7 +125,8 @@ func Start(
 						cancel,
 						proxy,
 						req,
-						func(forward string) { newProxy(serverConn.Permissions.Extensions["host"], forward) },
+						// Pass principalID when calling addProxy
+						func(forward string) { addProxy(principal.ID, serverConn.Permissions.Extensions["host"], forward) },
 						func() { removeProxy(serverConn.Permissions.Extensions["host"]) },
 					)
 				case "cancel-tcpip-forward":
