@@ -121,7 +121,7 @@ export default function DashboardPage() {
                       <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                         <h6>先配置</h6>
                         <code>$ pgrok init --remote-addr nmmm.top:2222 --forward-addr http://localhost:port --token {user.token}</code>
-                        <br/>
+                        <br />
                         <h6>然后运行</h6>
                         <code>$ pgrok</code>
                       </dd>
@@ -130,46 +130,46 @@ export default function DashboardPage() {
                       <dt className="text-sm font-medium leading-6 text-gray-900">pgrok客户端下载</dt>
                       <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                         <h6 className="text-blue-700 font-semibold">Windows平台</h6>
-                        <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_windows_amd64.zip">amd64</a><br/>
+                        <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_windows_amd64.zip">amd64</a><br />
                         <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_windows_arm64.zip">arm64</a>
-                        <br/>
+                        <br />
                         <h6 className="text-blue-700 font-semibold">Linux平台</h6>
-                        <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_linux_amd64.tar.gz">amd64(普通服务器，x86软路由)</a><br/>
+                        <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_linux_amd64.tar.gz">amd64(普通服务器,x86软路由)</a><br />
                         <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_linux_arm64.tar.gz">arm64(arm路由器自行尝试)</a>
-                        <br/>
+                        <br />
                         <h6 className="text-blue-700 font-semibold">Mac平台</h6>
-                        <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_darwin_amd64.tar.gz">amd64(黑苹果，2020之前的mac)</a><br/>
+                        <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_darwin_amd64.tar.gz">amd64(黑苹果,2020之前的mac)</a><br />
                         <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_darwin_arm64.tar.gz">arm64(2020后的mac)</a>
-                        <br/>
+                        <br />
                       </dd>
                     </div>
                     <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                       <dt className="text-sm font-medium leading-6 text-green-900">使用须知</dt>
                       <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        <p>感谢您选择我们的免费内网穿透服务！本服务由个人开发者独立维护，自动HTTPS，旨在为开发者、测试人员及小型项目提供便捷的内网穿透支持。​​免费≠无度​​，我们坚信技术共享的力量，但也需要每一位用户的共同守护。请您仔细阅读以下条款，合理使用资源，与我们携手维持服务的长期稳定，技术交流联系QQ 995433059</p>
-                          <br/>
-                          <div className="flex">
-                            <ul className="flex-5">
-                            <li><span className="font-bold text-orange-400">使用限制​​:</span>免费提供约2mbps（200kb/s）的带宽,一个uuid的二级域名</li>
-                              <li><span className="font-bold text-orange-400">不可保证:</span>免费内网穿透服务器是为爱发电，不承诺可用性（SLA）</li>
-                              <li><span className="font-bold text-orange-400">资源有限:</span>可能根据负载动态调整或暂停新用户注册</li>
-                              <li><span className="font-bold text-orange-400">违法用途​​:</span>禁止传播违法信息、网络攻击、侵犯隐私、破解商业系统等行为</li>
-                              <li><span className="font-bold text-orange-400">商业滥用​:</span>不得用于商业盈利、大规模分发、直播推流等高负载场景</li>
-                              <li><span className="font-bold text-orange-400">​安全底线:</span>严禁扫描攻击服务器、尝试漏洞利用、干扰其他用户正常使用。</li>
-                              <li><span className="font-bold text-orange-400">测试优先​:</span>建议用于开发调试、临时演示，非必要请勿7×24小时运行。</li>
-                              <li><span className="font-bold text-orange-400">及时清理​​:</span>长期未使用的隧道将定期回收，释放资源给更多用户。</li>
-                              <li><span className="font-bold text-orange-400">​共享精神​​:</span>欢迎技术交流，但请勿公开分享敏感配置(如token)或诱导他人滥用</li>
-                              <li>打赏后联系<a className="underline font-bold" href="mailto:lsplub@gmail.com">站长邮箱</a>（附上现有公网地址）可以申请一次自定义二级域名,先到先得</li>
-                            </ul>
-                            <div className="flex-2 mx-2 flex flex-col">
-                              <h5 className="text-center">打赏码</h5>
-                              <div className="flex-2 flex flex-row">
-                                <img src="/alipay.jpg" alt="支付宝" className="mx-2 w-32" />
-                                <img src="/wechat.jpg" alt="微信支付" className="mx-2 w-32" />
-                              </div>
+                        <p>感谢您选择我们的免费内网穿透服务！本服务由个人开发者独立维护,自动HTTPS,旨在为开发者、测试人员及小型项目提供便捷的内网穿透支持,免费≠无度,我们坚信技术共享的力量,但也需要每一位用户的共同守护。请您仔细阅读以下条款,合理使用资源,与我们携手维持服务的长期稳定,技术交流联系QQ 995433059</p>
+                        <br />
+                        <div className="flex">
+                          <ul className="flex-5">
+                            <li><span className="font-bold text-orange-400">使用限制:</span>免费提供约2mbps(200kb/s)的带宽,一个uuid的二级域名</li>
+                            <li><span className="font-bold text-orange-400">不可保证:</span>免费内网穿透服务器是为爱发电,不承诺可用性(SLA)</li>
+                            <li><span className="font-bold text-orange-400">资源有限:</span>可能根据负载动态调整或暂停新用户注册</li>
+                            <li><span className="font-bold text-orange-400">违法用途:</span>禁止传播违法信息、网络攻击、侵犯隐私、破解商业系统等行为</li>
+                            <li><span className="font-bold text-orange-400">商业滥用:</span>不得用于商业盈利、大规模分发、直播推流等高负载场景</li>
+                            <li><span className="font-bold text-orange-400">安全底线:</span>严禁扫描攻击服务器、尝试漏洞利用、干扰其他用户正常使用。</li>
+                            <li><span className="font-bold text-orange-400">测试优先:</span>建议用于开发调试、临时演示,非必要请勿7x24小时运行。</li>
+                            <li><span className="font-bold text-orange-400">及时清理:</span>长期未使用的隧道将定期回收,释放资源给更多用户。</li>
+                            <li><span className="font-bold text-orange-400">共享精神:</span>欢迎技术交流,但请勿公开分享敏感配置(如token)或诱导他人滥用</li>
+                            <li>打赏后联系<a className="underline font-bold" href="mailto:lsplub@gmail.com">站长邮箱</a>(附上现有公网地址)可以申请一次自定义二级域名,先到先得</li>
+                          </ul>
+                          <div className="flex-2 mx-2 flex flex-col">
+                            <h5 className="text-center">打赏码</h5>
+                            <div className="flex-2 flex flex-row">
+                              <img src="/alipay.jpg" alt="支付宝" className="mx-2 w-32" />
+                              <img src="/wechat.jpg" alt="微信支付" className="mx-2 w-32" />
                             </div>
                           </div>
-                        <br/>
+                        </div>
+                        <br />
                       </dd>
                     </div>
                   </dl>
