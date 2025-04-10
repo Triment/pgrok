@@ -4,7 +4,7 @@ RUN corepack enable
 
 WORKDIR /build
 COPY . .
-RUN pnpm --dir pgrokd/web install --frozen-lockfile --prefer-frozen-lockfile \
+RUN pnpm --dir pgrokd/web install --no-frozen-lockfile --prefer-frozen-lockfile \
     && pnpm --dir pgrokd/web run build
 
 FROM golang:alpine3.21 AS binarybuilder
