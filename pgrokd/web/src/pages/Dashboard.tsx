@@ -138,8 +138,8 @@ export default function DashboardPage() {
                         <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_linux_arm64.tar.gz">arm64(arm路由器自行尝试)</a>
                         <br/>
                         <h6 className="text-blue-700 font-semibold">Mac平台</h6>
-                        <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_linux_amd64.tar.gz">amd64(黑苹果，2020之前的mac)</a><br/>
-                        <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_linux_arm64.tar.gz">arm64(2020后的mac)</a>
+                        <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_darwin_amd64.tar.gz">amd64(黑苹果，2020之前的mac)</a><br/>
+                        <a className="text-blue-500 underline" href="https://gh-proxy.com/github.com/pgrok/pgrok/releases/download/v1.4.5/pgrok_1.4.5_darwin_arm64.tar.gz">arm64(2020后的mac)</a>
                         <br/>
                       </dd>
                     </div>
@@ -162,7 +162,7 @@ export default function DashboardPage() {
                               <li>打赏后联系<a className="underline font-bold" href="mailto:lsplub@gmail.com">站长邮箱</a>（附上现有公网地址）可以申请一次自定义二级域名,先到先得</li>
                             </ul>
                             <div className="flex-2 mx-2 flex flex-col">
-                              <h5 className="text-center">打赏后联系<a className="underline font-bold" href="mailto:lsplub@gmail.com">站长邮箱</a>可以申请一次自定义二级域名</h5>
+                              <h5 className="text-center">打赏码</h5>
                               <div className="flex-2 flex flex-row">
                                 <img src="/alipay.jpg" alt="支付宝" className="mx-2 w-32" />
                                 <img src="/wechat.jpg" alt="微信支付" className="mx-2 w-32" />
